@@ -12,6 +12,13 @@ function setTheme(theme){
     }
 }
 
-setTheme('dark')
-    
+const light = document.getElementsByClassName('shake')[0]
+const dark = document.getElementsByClassName('jump')[0]
+
+light.addEventListener('click', function(){
+    setTheme('light')
+})
+dark.addEventListener('click', function(){
+    setTheme('dark')
+})   
     
